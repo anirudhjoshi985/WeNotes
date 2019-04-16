@@ -1,3 +1,37 @@
 <resources>
     <string name="app_name">WeNotes</string>
+
+    <string-array name="colleges">
+        <item>LNMIIT</item>
+        <item>IIT bombay</item>
+        <item>IIT delhi</item>
+        <item>IIT madras</item>
+        <item>IIT kharagpur</item>
+        <item>MNIT</item>
+        <item>NIT warangal</item>
+        <item>IIIT Hyderabad</item>
+        <item>Msnipal University</item>
+        <item>IIT Hyderaabad</item>
+    </string-array>
+
+    <string-array name="Branch">
+        <item>CSE</item>
+        <item>CCE</item>
+        <item>ECE</item>
+        <item>ME</item>
+    </string-array>
+
+    <string-array name="semester">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
 </resources>
+
+

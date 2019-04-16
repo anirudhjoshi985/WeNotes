@@ -4,6 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Main2Activity">
+    tools:context=".Main2Activity"
+    android:background="@drawable/mango_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_menu_icon_1"
+        android:padding="16dp"
+        android:background="@android:color/transparent"
+        android:onClick="showPopup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:elevation="8dp"/>
+
+        <TextView
+            android:id="@+id/courses_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="courses"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
+            android:textSize="24sp"
+            android:textColor="#e65100" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_alignBaseline= "@id/courses_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
 
 </android.support.constraint.ConstraintLayout>
