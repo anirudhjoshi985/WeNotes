@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.PopupMenu;
+import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
@@ -17,16 +19,59 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main2Activity extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
 
     GoogleSignInClient mGoogleSignInClient;
     private long backPressedTime;
     Toast backToast;
 
+    List<Course> Courselist;
+    RecyclerView mRecyclerView;
+
+    int semNo;
+    int branchNo;
+    int coursecount;
+
+    /*
+    Branch Number
+    1 = CSE
+    2.= CCE
+    3.= ECE
+    4.= ME
+     */
+
+    public Main2Activity() {
+    }
+
+    public Main2Activity(int semNo, int branchNo) {
+        this.semNo = semNo;
+        this.branchNo = branchNo;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+
+        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerview_1);
+        mRecyclerView.setHasFixedSize(true);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        Courselist = new ArrayList<>();
+
+        Courselist.add(new Course("course1",5,R.mipmap.ic_launcher));
+        Courselist.add(new Course("course2",5,R.mipmap.ic_launcher));
+        Courselist.add(new Course("course3",5,R.mipmap.ic_launcher));
+        Courselist.add(new Course("course4",5,R.mipmap.ic_launcher));
+        Courselist.add(new Course("course5",5,R.mipmap.ic_launcher));
+        Courselist.add(new Course("course6",5,R.mipmap.ic_launcher));
+
+        CardAdapter adapter = new CardAdapter(this,Courselist);
+        mRecyclerView.setAdapter(adapter);
+
     }
 
     public void showPopup(View view){

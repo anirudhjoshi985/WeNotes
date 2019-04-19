@@ -35,6 +35,9 @@
             android:textColor="#e65100" />
 
         <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_1"
+            android:paddingTop="16dp"
+            android:paddingHorizontal="16dp"
             android:layout_alignBaseline= "@id/courses_title"
             android:layout_width="match_parent"
             android:layout_height="match_parent">

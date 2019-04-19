@@ -40,6 +40,7 @@ public class OptionsActivity extends AppCompatActivity {
         mACTVsemester.setAdapter(semesterAdapter);
 
 
+
         mNextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
