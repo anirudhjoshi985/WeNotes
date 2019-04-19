@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "35453377409",
+    "firebase_url": "https://wenotes-1554889635771.firebaseio.com",
+    "project_id": "wenotes-1554889635771",
+    "storage_bucket": "wenotes-1554889635771.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35453377409:android:52219e599580a8ef",
+        "android_client_info": {
+          "package_name": "com.anirudh.wenotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "35453377409-mb1ll8f0aqocm0lctimbup5dqmjtlabf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.anirudh.wenotes",
+            "certificate_hash": "b8ba96872a978edd104d10845812cecd557250b1"
+          }
+        },
+        {
+          "client_id": "35453377409-vjha8tpok432kn85df7kv2fb0oh6c02v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi3kZGQixZTKiWXohkrQAmxUNmNX6JAUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "35453377409-vjha8tpok432kn85df7kv2fb0oh6c02v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
